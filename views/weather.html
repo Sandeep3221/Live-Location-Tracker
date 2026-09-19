@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/weather.css">
+</head>
+<body>
+    <main class="weather-card">
+        <h1>Weather App</h1>
+        <p class="location"><span id="city">City</span>, <span id="country">Country</span></p>
+        <div class="weather-icon">
+            <img src="/weather.png" width="80" height="80" alt="Sunny weather">
+        </div>
+        <div class="weather-info">
+            <span class="temperature">25°C</span>
+            <span class="condition">Sunny</span>
+        </div>
+        <button id="check-weather" type="button">Check Weather</button>
+        <p id="location-status" class="status" role="status" aria-live="polite"></p>
+    </main>
+    <script src="/js/weather.js" defer></script>
+</body>
+</html>

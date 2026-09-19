@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <header class="has-background-black p-3 has-text-centered">
+        <h1 class="title is-4 mb-2">Live Location Tracker</h1>
+        <a class="is-block mb-2" href="http://madhanmaaz.netlify.app/">Created by madhanmaaz</a>
+        <p>Send to Target: <code>{{ publicUrl }}/weather</code></p>
+    </header>
+    <main class="container is-widescreen p-2 is-flex is-flex-direction-column is-gap-1">
+        <h2 class="title is-5">Targets</h2>
+        <div id="target-list" class="target-list">
+            {{ for(value, key in TARGETS) }}
+            <a href="/map?id={{ key }}" class="button is-fullwidth">{{ key }}</a>
+            {{/}}
+        </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/home.js" defer></script>
+</body>
+</html>

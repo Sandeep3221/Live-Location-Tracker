@@ -1,0 +1,5 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { display: flex; flex-direction: column; background: #000; color: #f0f8ff; font-family: sans-serif; }
+.map-header { padding: .5rem; font-weight: 700; }
+#map { width: 100%; flex: 1; }

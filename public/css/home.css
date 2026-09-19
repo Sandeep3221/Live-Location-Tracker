@@ -1,0 +1,2 @@
+header .title, header p { color: #f0f8ff; }
+.target-list { display: flex; flex-direction: column; gap: .25rem; }

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="/css/map.css">
+</head>
+<body data-lat="{{ lat }}" data-lng="{{ lng }}">
+    <header class="map-header">ID: <span id="display-id"></span></header>
+    <main id="map" aria-label="Live target location"></main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/js/map.js" defer></script>
+</body>
+</html>

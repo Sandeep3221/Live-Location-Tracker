@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { min-height: 100vh; min-height: 100dvh; margin: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; background: linear-gradient(to right, #4facfe, #00f2fe); font-family: Arial, sans-serif; }
+.weather-card { width: min(300px, 100%); padding: 25px 20px; border-radius: 15px; background: #fff; box-shadow: 0 8px 16px rgba(0, 0, 0, .2); text-align: center; transform: scale(1.5); }
+.weather-card h1 { margin: 0 0 5px; color: #333; font-size: 24px; }
+.location { margin-top: 5px; color: #555; font-size: 18px; }
+.weather-icon, .weather-info { margin: 20px 0; }
+.temperature { display: block; color: #333; font-size: 48px; font-weight: 700; }
+.condition { color: #777; font-size: 20px; }
+button { min-height: 44px; padding: 12px 24px; border: 0; border-radius: 8px; background: #4facfe; color: #fff; cursor: pointer; font-size: 16px; font-weight: 700; transition: background-color .3s; }
+button:disabled { cursor: wait; opacity: .7; }
+.status { min-height: 1.25rem; margin: .75rem 0 0; color: #555; font-size: 14px; }
+@media (max-width: 500px) { .weather-card { transform: none; } }
